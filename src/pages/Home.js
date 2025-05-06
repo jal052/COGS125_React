@@ -1,7 +1,8 @@
 export default function Home() {
   return (
     <div style={styles.container}>
-      <h1 style={styles.heading}>Jasmine's Portfolio</h1>
+      <h1 style={styles.heading}>Welcome</h1>
+      <p style={styles.beginnningtext}>My name is Jasmine Lam. I am currently a Cognitive Science with Design and Interaction student at UCSD.</p>
     </div>
   );
 }
@@ -12,7 +13,6 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
     height: "90vh",
-    backgroundColor: "#f0f4ff",
     flexDirection: "column",
   },
   heading: {

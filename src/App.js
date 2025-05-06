@@ -5,18 +5,23 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <Router>
-      <nav style={styles.nav}>
-        <Link to="/">Home</Link> |{" "}
-        <Link to="/about">About</Link> |{" "}
-        <Link to="/contact">Contact</Link>
-      </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </Router>
+    // <Router>
+    //   <nav style={styles.nav}>
+    //     <Link to="/">Home</Link> |{" "}
+    //     <Link to="/about">About</Link> |{" "}
+    //     <Link to="/contact">Contact</Link>
+    //   </nav>
+    //   <Routes>
+    //     <Route path="/" element={<Home />} />
+    //     <Route path="/about" element={<About />} />
+    //     <Route path="/contact" element={<Contact />} />
+    //   </Routes>
+    // </Router>
+
+      <div style={styles.container}>
+      <h1 style={styles.heading}>Welcome</h1>
+      <p style={styles.beginnningtext}>My name is Jasmine Lam. I am currently a Cognitive Science with Design and Interaction student at UCSD.</p>
+      </div>
   );
 }
 
@@ -37,6 +42,17 @@ const styles = {
     textDecoration: "none",
     fontWeight: "bold",
     fontSize: "18px",
+  },
+  container: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "90vh",
+    flexDirection: "column",
+  },
+  heading: {
+    fontSize: "2.5rem",
+    color: "#333",
   },
 };
 
